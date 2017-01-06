@@ -10,7 +10,7 @@ namespace Singleton
     {
         public void UseSingleton()
         {
-            var s1 = BadSingleton.CreateInstance();
+            var s1 = BadSingleton.Instance;
         }
     }
 }

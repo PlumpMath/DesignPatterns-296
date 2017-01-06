@@ -8,14 +8,14 @@ namespace Singleton
 {
     public class BadSingleton
     {
-        private BadSingleton()
+        //variable isnt readonly?
+        private static BadSingleton _instance;
+        //not threadsafe because multiple threads can access this code at exactly the same time.
+        public static BadSingleton Instance
         {
+            get { return _instance ?? (_instance = new BadSingleton()); }
         }
 
-        public static BadSingleton CreateInstance()
-        {
-            return new BadSingleton();
-        }
         public void DoSomething()
         {
 
