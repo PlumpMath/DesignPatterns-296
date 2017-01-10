@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BadSingleton.cs" />
+    <Compile Include="DotNetLazySingleton.cs" />
+    <Compile Include="FullyLazySingleton.cs" />
     <Compile Include="InefficientSingleton.cs" />
+    <Compile Include="LazySingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleSingleton.cs" />
     <Compile Include="SingletonClient.cs" />

@@ -59,8 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadDurationTest.cs" />
     <Compile Include="BadSingletonTest.cs" />
+    <Compile Include="DotNetLazySingletonTest.cs" />
+    <Compile Include="FullyLazySingletonTest.cs" />
     <Compile Include="InefficientSingletonTest.cs" />
+    <Compile Include="LazySingletonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleSingletonTest.cs" />
   </ItemGroup>
@@ -68,6 +72,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{816CFAE9-DBC0-4501-907A-3846FA8E7330}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Singleton\Singleton.csproj">
       <Project>{D38F695B-77CF-4715-AF72-A35F6084EF33}</Project>
       <Name>Singleton</Name>
